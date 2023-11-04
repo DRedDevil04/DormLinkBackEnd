@@ -18,7 +18,7 @@ export const createAnnounceController = async (req, res) => {
         const newAnn = await new announceModel({
             
             title,
-            description,
+            description
             
         });
         
