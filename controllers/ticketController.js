@@ -117,7 +117,7 @@ export const deleteTicketController= async (req,res)=>{
         const ticketV=await ticketModel.findByIdAndDelete(req.params.pid);
         res.status(200).send({
             success:true,
-            message:"Successfully Deleted",
+            message:"Successfully Deleted"
         })
     } catch (error) {
         console.log(error);
